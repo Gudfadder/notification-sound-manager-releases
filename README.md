@@ -17,8 +17,6 @@ unless you like hearing different sounds stacked on top of each other.
 
 NB: Turning off notifications for the apps you want this to provide sound for, makes this app unable to function as intended.
 
-**Version 1.3.0**
-
 ### What's new in 1.3.0
 - Rebranded to **Notification Sound Manager**
 - Debian package renamed to `notification-sound-manager`

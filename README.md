@@ -17,15 +17,23 @@ unless you like hearing different sounds stacked on top of each other.
 
 NB: Turning off notifications for the apps you want this to provide sound for, makes this app unable to function as intended.
 
-**Version 1.2.0**
+**Version 1.3.0**
 
-### What's new in 1.2.0
-- Added independent volume controls for each notification category
-- Volume settings are saved automatically
-- Test playback respects the selected volume
-- Real notification playback respects the selected volume
-- Login sound now respects its own volume setting
-- Continued support for multiple email clients
+### What's new in 1.3.0
+
+* Rebranded to **Notification Sound Manager**
+* Debian package renamed to `notification-sound-manager`
+* Existing `notification-manager` installations are replaced automatically during upgrade
+* Desktop launcher updated
+* App-grid name shortened to **Notify Sound**
+* Window title updated to **Notification Sound UI**
+* Existing settings remain compatible
+* Independent volume controls remain available for:
+
+  * General notifications
+  * Login sound
+  * Discord
+  * Email
 
 ### Supported Email Clients
 Email notifications are currently recognized from:
@@ -42,4 +50,4 @@ Then install it with:
 ```bash
 sudo apt install ./notification-sound-manager_1.3.0_all.deb
 ``` 
-Replace the 1.2.0 section of the code with whatever version you downloaded. Newest is always better unless i specify otherwise.
+Replace the 1.3.0 section of the code with whatever version you downloaded. Newest is always better unless i specify otherwise.

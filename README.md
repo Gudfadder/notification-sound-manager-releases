@@ -1,6 +1,6 @@
 # Notification Sound Manager
 <br>
-<img width="852" height="524" alt="image" src="https://github.com/user-attachments/assets/bcec4dd7-34cc-431c-b565-714eea9d7df0" />
+<img <img width="1690" height="931" alt="NSM_PIC_1" src="https://github.com/user-attachments/assets/02ab7d9b-0f77-4825-ae9a-86c8327b9b1d" />
 <br>
 <br>
 
@@ -26,11 +26,12 @@ NB: Turning off notifications for the apps you want this to provide sound for, m
 - Window title updated to **Notification Sound UI**
 - Existing settings remain compatible
 - Independent volume controls remain available for:
+  - General notifications
+  - Login sound
+  - Discord
+  - Email
 
-  * General notifications
-  * Login sound
-  * Discord
-  * Email
+### Supported Email Clients
 
 ### Supported Email Clients
 Email notifications are currently recognized from:

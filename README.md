@@ -1,14 +1,15 @@
-# Notification Manager
+# Notification Sound Manager
 <br>
 <img width="852" height="524" alt="image" src="https://github.com/user-attachments/assets/bcec4dd7-34cc-431c-b565-714eea9d7df0" />
 <br>
 <br>
 
 A lightweight Linux desktop application for customizing notification sounds.
-Notification Manager lets you choose separate sounds for:
+Notification Sound Manager lets you choose separate sounds for:
 - General notifications
 - Email notifications
 - Login/startup
+- Discord
 
 It only reads and adds sound to the notifications that occur, it does not replace the notifications nor the sound.
 So it would be wise to turn off the notification sound in the applications you want this app to provide sound for, 
@@ -39,6 +40,6 @@ Email notifications are currently recognized from:
 Download the latest `.deb` package from the **Releases** section.
 Then install it with:
 ```bash
-sudo apt install ./notification-manager_1.2.0_all.deb
+sudo apt install ./notification-sound-manager_1.3.0_all.deb
 ``` 
 Replace the 1.2.0 section of the code with whatever version you downloaded. Newest is always better unless i specify otherwise.

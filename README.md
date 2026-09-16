@@ -20,7 +20,6 @@ NB: Turning off notifications for the apps you want this to provide sound for, m
 **Version 1.3.0**
 
 ### What's new in 1.3.0
-
 - Rebranded to **Notification Sound Manager**
 - Debian package renamed to `notification-sound-manager`
 - Existing `notification-manager` installations are replaced automatically during upgrade

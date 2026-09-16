@@ -21,14 +21,14 @@ NB: Turning off notifications for the apps you want this to provide sound for, m
 
 ### What's new in 1.3.0
 
-* Rebranded to **Notification Sound Manager**
-* Debian package renamed to `notification-sound-manager`
-* Existing `notification-manager` installations are replaced automatically during upgrade
-* Desktop launcher updated
-* App-grid name shortened to **Notify Sound**
-* Window title updated to **Notification Sound UI**
-* Existing settings remain compatible
-* Independent volume controls remain available for:
+- Rebranded to **Notification Sound Manager**
+- Debian package renamed to `notification-sound-manager`
+- Existing `notification-manager` installations are replaced automatically during upgrade
+- Desktop launcher updated
+- App-grid name shortened to **Notify Sound**
+- Window title updated to **Notification Sound UI**
+- Existing settings remain compatible
+- Independent volume controls remain available for:
 
   * General notifications
   * Login sound

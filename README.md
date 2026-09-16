@@ -16,8 +16,15 @@ unless you like hearing different sounds stacked on top of each other.
 
 NB: Turning off notifications for the apps you want this to provide sound for, makes this app unable to function as intended.
 
-## Latest Release
-**Version 1.1.0**
+**Version 1.2.0**
+
+### What's new in 1.2.0
+- Added independent volume controls for each notification category
+- Volume settings are saved automatically
+- Test playback respects the selected volume
+- Real notification playback respects the selected volume
+- Login sound now respects its own volume setting
+- Continued support for multiple email clients
 
 ### Supported Email Clients
 Email notifications are currently recognized from:
@@ -32,4 +39,6 @@ Email notifications are currently recognized from:
 Download the latest `.deb` package from the **Releases** section.
 Then install it with:
 ```bash
-sudo apt install ./notification-manager_1.1.0_all.deb
+sudo apt install ./notification-manager_1.2.0_all.deb
+``` 
+Replace the 1.2.0 section of the code with whatever version you downloaded. Newest is always better unless i specify otherwise.

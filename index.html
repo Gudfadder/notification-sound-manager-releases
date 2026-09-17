@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Notification Manager - Custom Notification Sounds for Linux</title>
-
+  <title>Notification Sound Manager - Custom Notification Sounds for Linux</title>
   <meta
     name="description"
     content="Notification Manager is a lightweight Linux desktop app for custom notification sounds and per-category volume control for Discord, email, login, and general notifications."
@@ -44,6 +42,7 @@
       margin-top: 50px;
       border-left: 3px solid var(--accent);
       padding-left: 12px;
+      font-size: 1.8rem;
     }
 
     .subtitle {
@@ -88,6 +87,44 @@
       background: #242424;
     }
 
+    .email-card {
+      position: relative;
+    }
+
+    .email-tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 12px);
+      transform: translateX(-50%) translateY(5px);
+
+      width: 260px;
+      padding: 16px;
+
+      background: #252525;
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 0.15s ease,
+        transform 0.15s ease;
+
+      z-index: 10;
+    }
+
+    .email-tooltip p {
+      margin-bottom: 0;
+    }
+
+    .email-card:hover .email-tooltip,
+    .email-card:focus .email-tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
     code {
       background: #1d1d1d;
       padding: 4px 8px;
@@ -107,7 +144,7 @@
       border-radius: 10px;
       padding: 24px;
       margin-top: 0;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
     }
 
     .install-box h2 {
@@ -144,7 +181,7 @@
 
 <body>
   <header>
-    <h1>Notification Manager</h1>
+    <h1>Notification Sound Manager</h1>
 
     <p class="subtitle">
       Custom notification sounds and individual volume controls
@@ -168,19 +205,14 @@
 
   <main class="container">
     <div class="install-box">
-
       <h2>Installation</h2>
-
       <p>
         Download the latest <code>.deb</code> package from the Releases page,
         then install it with:
       </p>
-
       <pre><code>sudo apt install ./notification-manager_&lt;version&gt;_all.deb</code></pre>
-
       <div class="install-note">
         <strong>Important</strong>
-
         <p>
           Keep desktop notifications enabled in applications you want
           Notification Manager to handle. Disable the application's own
@@ -189,48 +221,43 @@
       </div>
     </div>
 
-    <h2>What is Notification Manager?</h2>
-
+    <h2>What is Notification Sound Manager?</h2>
     <p>
-      Notification Manager is a lightweight desktop application for
+      Notification Sound Manager is a lightweight desktop application for
       Debian and Ubuntu-based Linux systems that lets you choose your own
       sounds and volume levels for different types of notifications.
     </p>
-
     <div class="features">
 
       <div class="card">
         <h3>General Notifications</h3>
         <p>Choose a custom sound and volume for normal desktop notifications.</p>
       </div>
-
       <div class="card">
         <h3>Discord</h3>
         <p>Give Discord notifications their own custom sound and volume.</p>
       </div>
 
-      <div class="card">
+     <div class="card email-card" tabindex="0">
         <h3>Email</h3>
         <p>
           Separate notification sounds for supported email clients.
         </p>
+        <div class="email-tooltip">
+          <strong>Supported Email Clients</strong>
+          <p>
+            Thunderbird, Evolution, KMail, Geary, Mailspring, and Claws Mail.
+          </p>
+        </div>
       </div>
 
       <div class="card">
         <h3>Login</h3>
         <p>Play your chosen sound when you log into your desktop session.</p>
       </div>
-
     </div>
 
-    <h2>Supported Email Clients</h2>
-
-    <p>
-      Thunderbird, Evolution, KMail, Geary, Mailspring, and Claws Mail.
-    </p>
-
     <h2>Privacy</h2>
-
     <p>
       Notification Manager runs locally on your computer.
       It does not require an account, cloud service, telemetry,
@@ -238,17 +265,14 @@
     </p>
 
     <h2>Project Status</h2>
-
     <p>
       Notification Manager is actively being developed.
       Feedback, bug reports, and suggestions are welcome.
     </p>
 
   </main>
-
   <footer>
     Copyright © 2026 Marius Meyer
   </footer>
-
 </body>
 </html>

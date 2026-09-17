@@ -32,8 +32,6 @@ NB: Turning off notifications for the apps you want this to provide sound for, m
   - Email
 
 ### Supported Email Clients
-
-### Supported Email Clients
 Email notifications are currently recognized from:
 - Thunderbird
 - Evolution

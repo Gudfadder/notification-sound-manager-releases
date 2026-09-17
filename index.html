@@ -94,10 +94,9 @@
 
     .email-tooltip {
       position: absolute;
-      left: 50%;
+      left: 0;
       top: calc(100% + 12px);
-      bottom: auto;
-      transform: translateX(-50%) translateY(-5px);
+      transform: translateY(-5px);
 
       width: 260px;
       padding: 16px;
@@ -124,7 +123,7 @@
     .email-card:focus .email-tooltip {
       opacity: 1;
       visibility: visible;
-      transform: translateX(-50%) translateY(0);
+      transform: translateY(0);
     }
 
     code {

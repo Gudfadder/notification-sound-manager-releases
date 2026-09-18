@@ -6,7 +6,7 @@
   <title>Notification Sound Manager - Custom Notification Sounds for Linux</title>
   <meta
     name="description"
-    content="Notification Manager is a lightweight Linux desktop app for custom notification sounds and per-category volume control for Discord, email, login, and general notifications."
+    content="Notification Sound Manager is a lightweight Linux desktop app for custom notification sounds and per-category volume control for Discord, email, login, and general notifications."
   >
 
   <style>
@@ -91,6 +91,40 @@
           0 0 8px rgba(169, 112, 255, 0.65),
           0 0 18px rgba(169, 112, 255, 0.3);
       }
+    }
+
+    .about-section {
+      margin-bottom: 70px;
+    }
+
+    .about-section summary {
+      list-style: none;
+      cursor: pointer;
+
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .about-section summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .about-section summary::after {
+      content: "+";
+      float: right;
+      color: var(--accent);
+      font-size: 1.8rem;
+    }
+
+    .about-section[open] summary::after {
+      content: "−";
+    }
+
+    .about-content {
+      padding-top: 18px;
     }
       
     .features {
@@ -213,22 +247,20 @@
       Custom notification sounds and individual volume controls
       for Linux.
     </p>
-
     <a
       class="button"
       href="https://github.com/Gudfadder/notification-manager-releases/releases/latest"
     >
       Download Latest Release
     </a>
-
     <a
       class="button secondary"
       href="https://github.com/Gudfadder/notification-manager-releases"
     >
       View on GitHub
     </a>
-  </header>
 
+  </header>
   <main class="container">
     <div class="install-box">
       <h2>Installation</h2>
@@ -236,52 +268,61 @@
         Download the latest <code>.deb</code> package from the Releases page,
         then install it with:
       </p>
-      <pre><code>sudo apt install ./notification-manager_&lt;version&gt;_all.deb</code></pre>
+      <pre><code>sudo apt install ./notification-sound-manager_&lt;version&gt;_all.deb</code></pre>
       <div class="install-note">
         <strong>Important</strong>
         <p>
           Keep desktop notifications enabled in applications you want
-          Notification Manager to handle. Disable the application's own
+          Notification Sound Manager to handle. Disable the application's own
           notification sound if you want to avoid hearing two sounds at once.
         </p>
       </div>
     </div>
 
-    <h2>What is Notification Sound Manager?</h2>
-    <p>
-      Notification Sound Manager is a lightweight desktop application for
-      Debian and Ubuntu-based Linux systems that lets you choose your own
-      sounds and volume levels for different types of notifications.
-    </p>
-    <div class="features">
-
-      <div class="card">
-        <h3>General Notifications</h3>
-        <p>Choose a custom sound and volume for normal desktop notifications.</p>
-      </div>
-      <div class="card">
-        <h3>Discord</h3>
-        <p>Give Discord notifications their own custom sound and volume.</p>
-      </div>
-
-     <div class="card email-card" tabindex="0">
-        <h3>Email</h3>
-        <p>
-          Separate notification sounds for supported email clients.
-        </p>
-        <div class="email-tooltip">
-          <strong>Supported Email Clients</strong>
+    <details class="about-section" open>
+    <summary>
+      What is Notification Sound Manager?
+    </summary>
+    <div class="about-content">
+      <p>
+        Notification Sound Manager is a lightweight desktop application for
+        Debian and Ubuntu-based Linux systems that lets you choose your own
+        sounds and volume levels for different types of notifications.
+      </p>
+      <div class="features">
+        <div class="card">
+          <h3>General Notifications</h3>
           <p>
-            Thunderbird, Evolution, KMail, Geary, Mailspring, and Claws Mail.
+            Choose a custom sound and volume for normal desktop notifications.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Discord</h3>
+          <p>
+            Give Discord notifications their own custom sound and volume.
+          </p>
+        </div>
+        <div class="card email-card" tabindex="0">
+          <h3>Email</h3>
+          <p>
+            Separate notification sounds for supported email clients.
+          </p>
+          <div class="email-tooltip">
+            <strong>Supported Email Clients</strong>
+            <p>
+              Thunderbird, Evolution, KMail, Geary, Mailspring, and Claws Mail.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Login</h3>
+          <p>
+            Play your chosen sound when you log into your desktop session.
           </p>
         </div>
       </div>
-
-      <div class="card">
-        <h3>Login</h3>
-        <p>Play your chosen sound when you log into your desktop session.</p>
-      </div>
     </div>
+  </details>
 
     <h2>Privacy</h2>
     <p>

@@ -13,7 +13,6 @@
     :root {
       --accent: #7d8f78;
     }
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -21,30 +20,27 @@
       color: #f2f2f2;
       line-height: 1.6;
     }
-
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 40px 24px;
     }
 
+    /* Title */
     header {
       text-align: center;
       padding: 70px 20px 35px;
     }
-
     h1 {
       font-size: 3.5rem;
       margin-bottom: 10px;
     }
-
     h2 {
       margin-top: 50px;
       border-left: 3px solid var(--accent);
       padding-left: 12px;
       font-size: 1.8rem;
     }
-
     .subtitle {
       font-size: 1.25rem;
       color: #bdbdbd;
@@ -52,6 +48,7 @@
       margin: 0 auto 30px;
     }
 
+    /* Button Section */
     .button {
       display: inline-block;
       padding: 14px 24px;
@@ -61,30 +58,27 @@
       border-radius: 8px;
       font-weight: bold;
       margin: 6px;
-
       border: 1px solid transparent;
       transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease,
         transform 0.2s ease;
     }
-
     .button.secondary {
       background: #2b2b2b;
       color: #ffffff;
     }
-
     .button:hover {
       border-color: #d6b25e;
       transform: translateY(-2px);
       animation: gold-glow 1.6s ease-in-out infinite alternate;
     }
-
     .button.secondary:hover {
       border-color: #a970ff;
       animation: purple-glow 1.6s ease-in-out infinite alternate;
     }
 
+    /* The animation */
     @keyframes purple-glow {
       from {
         box-shadow:
@@ -98,6 +92,7 @@
       }
     }
 
+    /* About section */
     .about-section {
       margin-bottom: 0px;
     }
@@ -107,37 +102,31 @@
     .about-section[open] {
       margin-bottom: 70px;
     }
-
     .about-section summary {
       list-style: none;
       cursor: pointer;
-
       border-left: 3px solid var(--accent);
       padding-left: 12px;
-
       font-size: 1.8rem;
       font-weight: bold;
     }
-
     .about-section summary::-webkit-details-marker {
       display: none;
     }
-
     .about-section summary::after {
       content: "+";
       float: right;
       color: var(--accent);
       font-size: 1.8rem;
     }
-
     .about-section[open] summary::after {
       content: "−";
     }
-
     .about-content {
       padding-top: 18px;
     }
-      
+
+    /* Features */
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -146,49 +135,42 @@
       margin-bottom: 120px;
     }
 
+    /* Card */
     .card {
       background: #1d1d1d;
       padding: 22px;
       border-radius: 10px;
       transition: transform 0.15s ease, background 0.15s ease;
     }
-
     .card:hover {
       transform: translateY(-3px);
       background: #242424;
     }
-
     .email-card {
       position: relative;
     }
 
+    /* Email Tooltip */
     .email-tooltip {
       position: absolute;
       left: 0;
       top: calc(100% + 12px);
       transform: translateY(-5px);
-
       width: 260px;
       padding: 16px;
-
       background: #252525;
       border-left: 3px solid var(--accent);
       border-radius: 8px;
-
       opacity: 0;
       visibility: hidden;
-
       transition:
         opacity 0.15s ease,
         transform 0.15s ease;
-
       z-index: 10;
     }
-
     .email-tooltip p {
       margin-bottom: 0;
     }
-
     .email-card:hover .email-tooltip,
     .email-card:focus .email-tooltip {
       opacity: 1;
@@ -196,19 +178,18 @@
       transform: translateY(0);
     }
 
+    /* Code */
     code {
       background: #1d1d1d;
       padding: 4px 8px;
       border-radius: 5px;
     }
-
     pre {
       background: #1d1d1d;
       padding: 18px;
       border-radius: 10px;
       overflow-x: auto;
     }
-
     .install-box {
       background: #1d1d1d;
       border-left: 3px solid var(--accent);
@@ -217,31 +198,27 @@
       margin-top: 0;
       margin-bottom: 80px;
     }
-
     .install-box h2 {
       margin-top: 0;
       border-left: none;
       padding-left: 0;
     }
-
     .install-box pre {
       background: #151515;
       margin-bottom: 24px;
     }
-
     .install-note {
       border-top: 1px solid #333;
       padding-top: 20px;
     }
-
     .install-note strong {
       font-size: 1.2rem;
     }
-
     .install-note p {
       margin-bottom: 0;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       color: #888;
@@ -270,8 +247,8 @@
     >
       View on GitHub
     </a>
-
   </header>
+
   <main class="container">
     <div class="install-box">
       <h2>Installation</h2>

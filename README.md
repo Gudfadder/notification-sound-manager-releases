@@ -1,35 +1,33 @@
 # Notification Sound Manager
 <br>
-<img <img width="1690" height="931" alt="NSM_PIC_1" src="https://github.com/user-attachments/assets/02ab7d9b-0f77-4825-ae9a-86c8327b9b1d" />
+<img alt="Notification Sound Manager" src="images/notification-sound-manager.png">
 <br>
 <br>
-
 A lightweight Linux desktop application for customizing notification sounds.
-Notification Sound Manager lets you choose separate sounds for:
+
+Notification Sound Manager lets you configure separate sounds and volume levels for:
 - General notifications
 - Email notifications
+- Discord notifications
+- Individual Discord servers
 - Login/startup
-- Discord
 
-It only reads and adds sound to the notifications that occur, it does not replace the notifications nor the sound.
-So it would be wise to turn off the notification sound in the applications you want this app to provide sound for, 
-unless you like hearing different sounds stacked on top of each other.
+For General, Email, and Discord notifications, Notification Sound Manager listens for desktop notification events and plays the sound you have configured. It does not replace or disable the notification itself.
 
-NB: Turning off notifications for the apps you want this to provide sound for, makes this app unable to function as intended.
+If the application already plays its own notification sound, you may want to disable that application's built-in sound to avoid hearing both sounds at the same time.
 
-### What's new in 1.3.0
-- Rebranded to **Notification Sound Manager**
-- Debian package renamed to `notification-sound-manager`
-- Existing `notification-manager` installations are replaced automatically during upgrade
-- Desktop launcher updated
-- App-grid name shortened to **Notify Sound**
-- Window title updated to **Notification Sound UI**
-- Existing settings remain compatible
-- Independent volume controls remain available for:
-  - General notifications
-  - Login sound
-  - Discord
-  - Email
+**Important:** Do not disable the desktop notifications themselves. Notification Sound Manager relies on those notification events to detect when a sound should be played.
+
+The Login sound works separately and is played when your desktop session starts.
+
+### What's new in 1.4.0
+- Redesigned interface with sidebar navigation and dedicated pages
+- Added Discord server-specific sound overrides
+- Individual sound, volume, and enable/disable controls for Discord server overrides
+- Discord server detection supports styled Unicode server names
+- Improved Email and System settings layout
+- Improved dark mode styling and visual consistency
+- General UI polish and refinements
 
 ### Supported Email Clients
 Email notifications are currently recognized from:
@@ -44,6 +42,6 @@ Email notifications are currently recognized from:
 Download the latest `.deb` package from the **Releases** section.
 Then install it with:
 ```bash
-sudo apt install ./notification-sound-manager_1.3.0_all.deb
+sudo apt install ./notification-sound-manager_1.4.0_all.deb
 ``` 
-Replace the 1.3.0 section of the code with whatever version you downloaded. Newest is always better unless i specify otherwise.
+Replace the 1.4.0 section of the command with whatever version you downloaded. Newest is always better unless specified otherwise.
